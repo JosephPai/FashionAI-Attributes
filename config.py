@@ -1,4 +1,5 @@
 import os
+
 # 4 gpus
 gpu_list = [0, 1, 2, 3]
 os.environ['CUDA_VISIBLE_DEVICES'] = gpu_list

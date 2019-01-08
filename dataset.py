@@ -31,7 +31,7 @@ def get_single_task_soft_label(attr):
                 new_line_soft1.append(label_dict_soft1[c])
                 new_line_soft2.append(label_dict_soft2[c])
                 new_line_soft3.append(label_dict_soft3[c])
-            if line[1] == attr:
+            if line[1] in attr:
                 tmp = line[-1].count("m")
                 if tmp == 0:
                     single_task_label.writerow(new_line_one_hot)
